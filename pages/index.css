@@ -6,6 +6,8 @@
   font-family: "Inter", Arial, sans-serif; /* Fixed the font-family name to "Inter" */
   font-size: 16px;
   line-height: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 p {
