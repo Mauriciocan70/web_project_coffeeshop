@@ -1,17 +1,202 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  display: flex;
-  justify-content: center;
-  font-family: "Inter", Arial, sans-serif; /* Fixed the font-family name to "Inter" */
-  font-size: 16px;
-  line-height: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  position: relative; /* O fixed si debe quedar fijo */
+  height: auto; /* Elimina height: 100vh si no es necesario */
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 40px 40px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url("../images/background_header.svg");
 }
 
-p {
-  font-family: "Noto Serif", serif;
+body {
+  overflow: auto;
+  min-height: 100vh; /* Garantiza que el contenido pueda expandirse */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: auto;
+  margin-right: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav__logo {
+  width: 105px;
+  height: 39px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 90px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  list-style-type: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  max-width: 635px;
+  margin-top: 96px;
+  font-family: "Noto Serif";
   font-style: italic;
-  font-weight: 400;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+.header__second_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
+}
+.header__description {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+  margin-top: 28px;
+  margin-bottom: 0;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.header__image {
+  max-width: 636px;
+  max-height: 568px;
+  margin-top: auto;
+}
+
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__address {
+  color: #838383;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.header__time {
+  color: #838383;
+  margin: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.content {
+  background-color: #0a2850;
+  min-height: 100vh;
+  width: 100%; /* Para que en pantallas pequeñas se adapte mejor */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Espacio interno para que el contenido respire */
+  box-sizing: border-box; /* Evita que el padding altere el ancho */
+  background-image: url("../images/background_recipes.svg");
+  background-size: cover;
+  box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
+  padding-bottom: 40px;
+}
+.recipes {
+  color: #ffffff;
+}
+.recipes__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  max-width: 580px;
+  padding-bottom: 24px;
+}
+.recipes__subtitle {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 438px;
+  padding-bottom: 80px;
+}
+.recipes__videos {
+  display: flex;
+  justify-content: center; /* Videos uno debajo del otro */
+  align-items: center; /* Centra los videos horizontalmente */
+  gap: 40px; /* Espacio entre cada video */
+  padding-bottom: 215px; /* Añade un poco de espacio en el contenedor */
+}
+
+.recipes__video-item {
+  text-align: justify; /* Centra el texto debajo del video */
+  width: 100%;
+  max-width: 600px; /* Ancho máximo para los videos */
+}
+
+.recipes__video-frame {
+  width: 100%; /* Videos responsivos */
+  height: 315px; /* Altura fija para mantener proporciones */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual */
+}
+
+.recipes__video-caption {
+  display: flex; /* Flexbox para alinear en una línea */ /* Centra el contenido horizontalmente */
+  justify-content: space-between;
+  margin-top: 24px; /* Espacio entre el video y el texto */
+  font-size: 18px; /* Tamaño de fuente adecuado */
+  color: #ffffff; /* Color suave */
+}
+.recipes__video-duration {
+  font-size: 16px; /* Tamaño de fuente para la duración */
+  color: #ffffff; /* Color más suave para la duración */
 }
