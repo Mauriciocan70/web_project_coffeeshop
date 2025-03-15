@@ -3,6 +3,8 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; /* Ajustar según el brief */
+  line-height: 20px;
 }
 .header {
   position: relative; /* O fixed si debe quedar fijo */
@@ -62,7 +64,7 @@ body {
 
 .header__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header__title {
@@ -75,13 +77,14 @@ body {
   line-height: 72px;
   color: #2f80ed;
 }
-.header__second_title {
+.header__title_second {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   letter-spacing: 1px;
+  color: #000000;
 }
 .header__description {
   font-size: 20px;
@@ -98,7 +101,9 @@ body {
 .header__image {
   max-width: 636px;
   max-height: 568px;
-  margin-top: auto;
+  position: absolute;
+  left: 55%;
+  bottom: 5%;
 }
 
 .header__footer {
@@ -112,7 +117,7 @@ body {
   text-decoration: none;
 }
 
-.header__address {
+.header__paragraph {
   color: #838383;
   font-family: "Inter";
   font-style: normal;
@@ -120,19 +125,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: auto;
   padding-bottom: 40px;
-}
-
-.header__time {
-  color: #838383;
-  margin: auto;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .content {
@@ -183,7 +178,7 @@ body {
   max-width: 600px; /* Ancho máximo para los videos */
 }
 
-.recipes__video-frame {
+.recipes__iframe {
   width: 100%; /* Videos responsivos */
   height: 315px; /* Altura fija para mantener proporciones */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual */
