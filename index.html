@@ -7,13 +7,10 @@
     <meta name="description" content="Proyecto HTML." />
     <meta name="keywords" content="HTML, CSS, web, diseño, desarrollo" />
     <title>Cafeteria TripleTen</title>
+
     <!-- Cargar normalize.css antes de tus estilos personalizados -->
     <link rel="stylesheet" href="./vendor/normalize.css" />
-
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="pages/index.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <!-- Pre-conexiones para fuentes -->
@@ -41,22 +38,17 @@
             class="nav__logo"
           />
           <ul class="nav__links">
-            <li>
-              <a href="#recipes" class="nav__link">Recetas</a>
-            </li>
+            <li><a href="#recipes" class="nav__link">Recetas</a></li>
             <li>
               <a href="#reservation" class="nav__link">Reservar una mesa</a>
             </li>
-            <li>
-              <a href="#contact" class="nav__link">Contactos</a>
-            </li>
-            <li>
-              <a href="#footer" class="nav__link">Contactos</a>
-            </li>
-          </ul>
+            <li><a href="#contact" class="nav__link">Contactos</a></li>
         </nav>
+
+        <!-- Mover header__title justo después del nav -->
+        <h1 class="header__title">Café de especialidad</h1>
+
         <div class="header__content">
-          <h1><span class="header__title"> Café de especialidad</span></h1>
           <h2>
             <span class="header__title header__title_second"
               >en Triple Peaks</span
@@ -83,13 +75,16 @@
           </p>
         </div>
       </header>
+
       <main class="content">
         <!-- Sección de Recetas -->
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recetas</h2>
           <p class="recipes__subtitle">
-            Echa un vistazo a las recetas que hemos reunido para que elabores tus propios snacks.
+            Echa un vistazo a las recetas que hemos reunido para que elabores
+            tus propios snacks.
           </p>
+
           <div class="recipes__videos">
             <div class="recipes__video-item">
               <iframe
@@ -102,7 +97,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-              ></iframe>
+              >
+              </iframe>
               <p class="recipes__video-caption">
                 Receta en Aeropress
                 <span class="recipes__video-duration">~5min</span>
@@ -120,7 +116,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-              ></iframe>
+              >
+              </iframe>
               <p class="recipes__video-caption">
                 Receta en cafetera francesa
                 <span class="recipes__video-duration">~15min</span>
@@ -135,9 +132,28 @@
           <p class="reservation__description">
             ¡Haz tu reserva online para asegurar tu lugar en nuestra cafetería!
           </p>
+        </section>
+
         <!-- Sección de Contacto -->
         <section id="contact" class="contact">
           <h2 class="contact__title">Contacto</h2>
+          <p class="contact__description">
+            ¿Tienes alguna duda? Contáctanos a través de nuestro correo o redes
+            sociales.
+          </p>
+          <ul class="contact__list">
+            <li>
+              <strong>Correo:</strong>
+              <a href="mailto:contacto@cafeteriatripleten.com"
+                >contacto@cafeteriatripleten.com</a
+              >
+            </li>
+            <li><strong>Teléfono:</strong> +34 123 456 789</li>
+            <li>
+              <strong>Dirección:</strong> Avenida del Éxito 200, Ciudad Triple
+              Peaks
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer"></footer>
