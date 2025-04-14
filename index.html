@@ -47,30 +47,29 @@
         </nav>
 
         <!-- Mover header__title justo después del nav -->
-        <h1 class="header__title">Café de especialidad</h1>
-
-        <div class="header__content">
-          <h2>
-            <span class="header__title header__title_second"
-              >en Triple Peaks</span
-            >
-          </h2>
-          <p class="header__description">
-            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-            para darte energía y motivar tu creatividad.
-          </p>
-        </div>
+        <h1 class="header__title">
+          <span class="header__span-accent">Café de especialidad</span><br />en
+          Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
         <img
           src="./images/inside_coffee_shop.png"
           alt="Interior de la cafetería"
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__paragraph">Horario:</p>
-          <p class="header__paragraph">Lunes a Viernes (de 10:00h a 19:00h)</p>
-          <p class="header__paragraph">
-            Sábados y Domingos (de 11:00h a 18:00h)
-          </p>
+          <div class="user user_role_author">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábados y Domingos (de 11:00h a 18:00h)
+            </p>
+          </div>
           <p class="header__paragraph">
             Avenida del Éxito 200. Ciudad Triple Peaks
           </p>
@@ -98,8 +97,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-              >
-              </iframe>
+              ></iframe>
               <p class="recipes__video-caption">
                 Receta en Aeropress
                 <span class="recipes__video-duration">~5min</span>
@@ -117,8 +115,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-              >
-              </iframe>
+              ></iframe>
               <p class="recipes__video-caption">
                 Receta en cafetera francesa
                 <span class="recipes__video-duration">~15min</span>
@@ -126,7 +123,15 @@
             </div>
           </div>
         </section>
-        <section id="reservation" class="reservation"></section>
+
+        <!-- Sección de Reservaciones -->
+        <!--section id="reservation" class="reservation">
+                <h2 class="reservation__title">Reserva tu mesa</h2>
+                <p class="reservation__description">
+                  ¡Haz tu reserva online para asegurar tu lugar en nuestra
+                  cafetería!
+                </p>
+              </section-->
       </main>
       <footer id="footer" class="footer"></footer>
     </div>
