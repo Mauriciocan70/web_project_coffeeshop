@@ -1,0 +1,68 @@
+.recipes {
+  color: #ffffff;
+}
+.content {
+  background-color: #0a2850;
+  min-height: 100vh;
+  width: 100%; /* Para que en pantallas pequeñas se adapte mejor */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Espacio interno para que el contenido respire */
+  box-sizing: border-box; /* Evita que el padding altere el ancho */
+  background-image: url("../images/background_recipes.svg");
+  background-size: cover;
+  box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
+  padding-bottom: 40px;
+}
+.recipes__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  max-width: 580px;
+  padding-bottom: 24px;
+}
+
+.recipes__subtitle {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 438px;
+  padding-bottom: 80px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center; /* Videos uno debajo del otro */
+  align-items: center; /* Centra los videos horizontalmente */
+  gap: 40px; /* Espacio entre cada video */
+  padding-bottom: 215px; /* Añade un poco de espacio en el contenedor */
+}
+
+.recipes__video-item {
+  text-align: justify; /* Centra el texto debajo del video */
+  width: 100%;
+  max-width: 600px; /* Ancho máximo para los videos */
+}
+
+.recipes__iframe {
+  width: 100%; /* Videos responsivos */
+  height: 315px; /* Altura fija para mantener proporciones */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para un efecto visual */
+}
+
+.recipes__video-caption {
+  display: flex; /* Flexbox para alinear en una línea */ /* Centra el contenido horizontalmente */
+  justify-content: space-between;
+  margin-top: 24px; /* Espacio entre el video y el texto */
+  font-size: 18px; /* Tamaño de fuente adecuado */
+  color: #ffffff; /* Color suave */
+}
+
+.recipes__video-duration {
+  font-size: 16px; /* Tamaño de fuente para la duración */
+  color: #ffffff; /* Color más suave para la duración */
+}
