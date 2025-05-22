@@ -1,7 +1,5 @@
 .recipes {
   color: #ffffff;
-}
-.content {
   background-color: #0a2850;
   min-height: 100vh;
   width: 100%; /* Para que en pantallas pequeñas se adapte mejor */
@@ -13,6 +11,7 @@
   box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
   padding-bottom: 40px;
 }
+
 .recipes__title {
   font-size: 44px;
   font-weight: 500;
